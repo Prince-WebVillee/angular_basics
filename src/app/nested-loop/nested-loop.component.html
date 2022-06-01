@@ -1,0 +1,11 @@
+<p>nested-loop works!</p>
+<ul *ngFor="let user of users">
+  <li>Name : {{ user.name }}</li>
+  <li>Age : {{ user.age }}</li>
+  <li>
+    Social Accounts
+    <ul *ngFor="let account of user.socialAccounts">
+      <li>{{ account }}</li>
+    </ul>
+  </li>
+</ul>
